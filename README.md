@@ -1,3 +1,18 @@
+GDAL.cn
+针对中国特有的几种坐标系添加几何转换功能。目前仅考虑Linux版。
+单独写解析geometry的代码太麻烦了，也不优雅，不如直接嫁接一下来的舒服。
+目前选择的是gdal，如果发现不合适也可能改为pro4j之类。
+
+Xian 80的正式代码为EPSG:2333
+于是捏造如下伪代码：
+gcj-02 --> EPSG:233，和西安80差不多
+bd --> EPSG:234，在gcj-02基础上多此一举
+
+以上。
+
+
+
+
 GDAL - Geospatial Data Abstraction Library
 ====
 
